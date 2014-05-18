@@ -1,3 +1,3 @@
 HighVoltage.configure do |config|
-  config.home_page = 'welcome'
+  config.routes = false
 end
