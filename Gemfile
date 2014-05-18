@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Font Awesome for icons
+gem "font-awesome-rails"
+
 # High Voltage for static sites
 gem 'high_voltage'
 
