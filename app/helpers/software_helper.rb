@@ -1,6 +1,6 @@
 module SoftwareHelper
 
 	def software_options
-		['7zip','SysInternals','Office','PDF-Creator', 'GoogleChrome', 'Javaruntime', 'PDFCreator']
+		['7zip','SysInternals','Office','PDF-Creator', 'GoogleChrome', 'Javaruntime', 'PDFCreator', 'Ccleaner']
 	end
 end
