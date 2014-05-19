@@ -1,16 +1,13 @@
-<h1><p class="text-primary">
+<h1>Die folgende Software wurde ausgewählt</h1>
+<p class="text-primary">
+
+
 
 
 <%= @software.softwarename %> 
 
-<%= link_to 'Google', "http://google.ie/" %>
+<%= link_to "Installieren", 
+"http://boxstarter.org/package/#{@software.softwarename}", class: 'btn btn-primary' %>
 
-<%= link_to "Outside Site", 
-"http://boxstarter.org/package/#{@software.softwarename}" %>
+</p>
 
-
-
-</h1>
-
-
-</h1></p>
