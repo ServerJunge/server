@@ -5,5 +5,5 @@ class ApplicationController < ActionController::Base
 
       def software_params
     	params.require(:software).permit(:softwarename => [])
-  	end
+    end
 end

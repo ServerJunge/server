@@ -1,5 +1,6 @@
 class SoftwaresController < ApplicationController
 
+
 	def new
 		@software = Software.new
 	end
