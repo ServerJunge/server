@@ -1,13 +1,15 @@
-<h1>Die folgende Software wurde ausgewählt</h1>
-<p class="text-primary">
+<div class="well">
+
+<p class="text-primary"> <legend class="text-primary">Installation bereit</legend></p>
+<p>Die Installation wurde erfolgreich vorbereitet. 
 
 
 
 
-<%= @software.softwarename %> 
+<br><br>
 
 <%= link_to "Installieren", 
 "http://boxstarter.org/package/#{@software.softwarename}", class: 'btn btn-primary' %>
-
+<%= link_to 'Abbrechen', new_software_path, class: 'btn btn-danger' %>
 </p>
-
+</div>
