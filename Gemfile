@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# Will_Paginate
+gem 'will_paginate'
+
+# SimpleForm
+gem 'simple_form'
+
 # Font Awesome for icons
 gem "font-awesome-rails"
 
