@@ -1,6 +1,6 @@
 	<%= simple_form_for(@software)  do |f| %>
 
-			<%= f.input :softwarename, :collection => software_options, as: :check_boxes %>
+			<%= f.input :softwarename, :collection => software_options, as: :check_boxes, label: 'Auswahl treffen' %>
 
 				<div class="form-group">
       				<div class="col-lg-10 col-lg-offset-2">
