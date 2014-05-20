@@ -9,6 +9,8 @@ class SoftwaresController < ApplicationController
 		@software = Software.new(software_params)
 
   		@software.save
+
+  		flash[:notice] = "Artikel '#{@software.softwarename}' wurde aktualisiert!"
   		redirect_to @software
 	end
 
