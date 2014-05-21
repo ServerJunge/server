@@ -4,6 +4,12 @@
 
 			<%= f.input :softwarename, :collection => software_options_tool, as: :check_boxes, label: 'Werkzeuge' %>
 
+			<%= f.input :softwarename, :collection => software_options_browser, as: :check_boxes, label: 'Browser' %>
+
+			<%= f.input :softwarename, :collection => software_options_safe, as: :check_boxes, label: 'Schutz' %>
+
+			<%= f.input :softwarename, :collection => software_options_multimedia, as: :check_boxes, label: 'Multimeda' %>
+
 				<div class="form-group">
       				<div class="col-lg-10 col-lg-offset-2">
   			<%= f.button :submit, 'Überprüfen', class: 'btn btn-success'%>

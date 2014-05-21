@@ -11,7 +11,7 @@ class SoftwaresController < ApplicationController
   		
   		@software.save
 
-  		flash[:notice] = "Artikel '#{@software.softwarename}' wurde aktualisiert!"
+  		flash[:notice] = "Hinweis: Vor der Installation solltest Du dir zunächst die Anleitung anschauen!"
   		redirect_to @software
 	end
 

@@ -21,7 +21,8 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-    <li><li><%= link_to 'START', new_software_path %></li></li>
+            <li><%= link_to 'START', new_software_path %></li>
+            <li><a href="#">ANLEITUNG</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">KONTAKT</a></li>
             <li><a href="#">IMPRESSUM</a></li>
@@ -32,40 +33,8 @@
 
 <div class="jumbotron">
    <div class="container">
-      <h1>Automatische Installation</h1>
-      <p>CloudJunge installiert Windows Server- und Clientsysteme vollautomatisch. Dies umfasst Updates, Software und Einstellungen.</p>
-      <p><a class="btn btn-primary btn-lg" role="button">
-         Jetzt loslegen!</a>
-      </p>
-   </div>
-</div>
-
-<div class="container">
-  <div class="row">
-  <div class="col-md-4 text-center">
-<i class="fa fa-search fa-3x"></i>
-
-  </div>
-  <div class="col-md-4 text-center">
-<i class="fa fa-cogs fa-3x"></i>
-  </div>
-  <div class="col-md-4 text-center">
-    <i class="fa fa-clock-o fa-3x"></i>
-
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-md-4 text-center text-primary"><h2>Software aussuchen</h2>
-<p>Auswahl von über 100 verschiedenen Software-Programmen. Von Adobe Reader bis zu 7zip steht alles zur Verfügung.</p>
-  </div>
-  <div class="col-md-4 text-center text-primary"><h2>Einstellungen festlegen</h2>
-<p>Die wichtigsten Windows-Einstellungen festlegen. Von der Taskleiste bis zum Remotedesktop lassen sich alle Einstellungen vorgeben.</p>
-  </div>
-  <div class="col-md-4 text-center text-primary"><h2>Entspannt zurücklehnen</h2>
-<p>Den Rest erledigt CloudJunge vollautomatisch. Selbst notwendige Neustarts nach Windows Updates werden durchgeführt.</p>
-  </div>
+      
+      <%= yield %>
 </div>
 </div>
 
