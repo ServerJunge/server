@@ -7,9 +7,9 @@ class PagesController < ApplicationController
 
   def welcome
     case params[:id]
-    when 'welcome'
-      'welcome'
-    else
+      when 'welcome'
+        'welcome'
+      else
       'application'
     end
   end

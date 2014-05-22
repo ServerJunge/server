@@ -8,10 +8,10 @@ class SoftwaresController < ApplicationController
 	def create
 		@software = Software.new(software_params)
 
-  		
   		@software.save
 
   		flash[:notice] = "Hinweis: Vor der Installation solltest Du dir zunächst die Anleitung anschauen!"
+  		
   		redirect_to @software
 	end
 
@@ -20,8 +20,7 @@ class SoftwaresController < ApplicationController
 	end
 
 	def index
-  			@softwares = Software.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
-  		end
+  		@softwares = Software.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
 	end
 
 	def destroy
@@ -38,10 +37,11 @@ class SoftwaresController < ApplicationController
 
 	def update
 		@software = Software.find(params[:id])
+
 		@software.update(software_params)
 
 		flash[:info] = "Artikel '#{@software.title}' wurde aktualisiert!"
 
 		redirect_to software_path(@software)
 	end
-
+end

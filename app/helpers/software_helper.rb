@@ -5,7 +5,7 @@ module SoftwareHelper
 	end
 
 	def software_options_tool
-		['Sysinternals','CCleaner']
+		['Sysinternals','CCleaner','Cmder']
 	end
 
 	def software_options_browser

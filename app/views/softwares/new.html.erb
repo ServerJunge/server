@@ -1,12 +1,10 @@
 <div class="well">
- 	<legend class="text-primary">Software auswählen</legend>
+	<legend class="text-primary">Software auswählen</legend>
+		<% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+        <%= value %>
+    </div>
+  		<% end %>
 
- 	  <% flash.each do |key, value| %>
-        <div class="<%= flash_class(key) %>">
-              <%= value %>
-        </div>
-  <% end %>
-
- 	<%= render partial: 'form' %>
-		
-</div>
+ 		<%= render partial: 'form' %>
+	</div>
