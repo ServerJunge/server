@@ -1,0 +1,16 @@
+<div class="well">
+  <legend class="text-primary">Kontaktanfrage</legend>
+
+  <%= simple_form_for @contact do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+
+
+<div class="form-group">
+  <div class="col-lg-10 col-lg-offset-2">
+      <%= f.button :submit, 'Senden', class: 'btn btn-success'%>
+  </div>
+</div>
+  <% end %>
+</div>

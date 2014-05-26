@@ -24,6 +24,7 @@ Rails.application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
+
   # number of complex assets.
   config.assets.debug = true
 
@@ -34,4 +35,13 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :authentication => :plain,
+  :address => "smtp.mailgun.org",
+  :port => 587,
+  :domain => "sandbox21185059b59f4faabbe18b79d9775255.mailgun.org",
+  :user_name => "postmaster@sandbox21185059b59f4faabbe18b79d9775255.mailgun.org",
+  :password => "9zz4y-9qmtf9"
+}
 end

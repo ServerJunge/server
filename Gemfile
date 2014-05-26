@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# MailForm
+gem 'mail_form'
+
 # Will_Paginate
 gem 'will_paginate'
 
