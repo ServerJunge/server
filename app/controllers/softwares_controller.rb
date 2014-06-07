@@ -8,12 +8,22 @@ class SoftwaresController < ApplicationController
 	def create
 		@software = Software.new(software_params)
 
-  		@software.save
 
-  		flash[:notice] = "Hinweis: Vor der Installation solltest Du dir zunächst die Anleitung anschauen!"
+		if !@software.errors.empty?
+  			redirect_to @software
+	
+
+  		flash[:notice] = "HinweiDA s: Vor der Installation solltest Du dir zunächst die Anleitung anschauen!"
   		
+  	
+
+  	else
   		redirect_to @software
+  		 flash[:error] = "You are missing required fields."
+  		 @software.save
 	end
+
+end
 
 	def show
   		@software = Software.find(params[:id])
