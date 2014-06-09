@@ -25,8 +25,12 @@
             <li><%= link_to 'ANLEITUNG', page_path('instruction') %></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">KONTAKT</a></li>
-            <li><a href="#">IMPRESSUM</a></li>
+            <li><%= link_to 'IMPRESSUM', page_path('sitenotice') %></li>
           </ul>
+
+          <p class="navbar-text pull-right">
+
+             <a class="btn btn-success btn-xs" role="button">SPENDEN</a>
         </div><!--END COLLAPSE -->
       </div><!--END CONTAINER FROM NAVBAR -->
     </div><!--END NAVBAR -->
@@ -40,7 +44,28 @@
 </div>
 
 <div id="footer" class="navbar-default">
+  <hr>
   <div class="container">
+       <p class="muted credit">Dir gefällt CloudJunge? Dann würde ich mich freuen, wenn Du es weiterempfiehlst!</a>.</p>
+  <div class="row">
+    <div class="col-md-4 text-center">
+       <a class="btn btn-block btn-social btn-twitter">
+    <i class="fa fa-twitter"></i> Twitter
+  </a>
+    </div>
+    <div class="col-md-4 text-center">
+        <a class="btn btn-block btn-social btn-facebook">
+    <i class="fa fa-facebook"></i> Facebook
+  </a>
+    </div>
+    <div class="col-md-4 text-center">
+      <a class="btn btn-block btn-social btn-google-plus">
+    <i class="fa fa-google-plus"></i> Google+
+  </a>
+
+  <br>
+    </div>
+  </div>
   </div>
 </div>
 
