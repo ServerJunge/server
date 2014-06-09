@@ -1,8 +1,8 @@
 <%= simple_form_for(@software)  do |f| %>
 
-
-	<%= f.input :softwarename, :collection => software_options_office, as: :check_boxes, label: 'Büro' %>
-
+	<h3>Büro</h3>
+	<%= f.input :softwarename, :collection => software_options_office, as: :check_boxes, label: '' %>
+	<h4>Werkzeuge</h4>
 	<%= f.input :softwarename, :collection => software_options_tool, as: :check_boxes, label: 'Werkzeuge' %>
 
 	<%= f.input :softwarename, :collection => software_options_browser, as: :check_boxes, label: 'Browser' %>
